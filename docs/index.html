@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Holistic 3D Human and Scene Mesh Estimation from Single View Images </title>
+  <title>Unsupervised Discovery of the Long-Tail in Instance Segmentation Using Hierarchical Self-Supervision</title>
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -54,10 +54,10 @@
  -->
 <div id="header">
   <a href="https://marvl.stanford.edu/index.html">
-    <img src="./img/marvl.png" style="height:90px; float: left; margin-left: 50px; margin-top:20px;">
+    <img src="img/marvl.png" style="height:90px; float: left; margin-left: 50px; margin-top:20px;">
   </a>
   <a href="http://stanford.edu/">
-    <img src="./img/Stanford.png" style="height:100px; float: right; margin-right: 90px; margin-top:20px;">
+    <img src="img/Stanford.png" style="height:100px; float: right; margin-right: 90px; margin-top:20px;">
   </a>
 
   <br>
@@ -82,14 +82,14 @@ Instance segmentation is an active topic in computer vision that is usually solv
 masks. Obtaining such a dataset for any new domain can be very expensive and time-consuming. In addition, models trained on certain annotated categories do not generalize well to unseen objects. The goal of this paper is to propose
 a method that can perform unsupervised discovery of long-tail categories in instance segmentation, through learning instance embeddings of masked regions. Leveraging rich relationship and hierarchical structure between objects in the images, we propose self-supervised losses for learning mask embeddings. Trained on COCO dataset without additional annotations of the long-tail objects, our model is
 able to discover novel and more fine-grained objects than the common categories in COCO. We show that the model achieves competitive quantitative results on LVIS as
-compared to the supervised and partially supervised methods. [<a href="poster.pdf">Poster</a>/<a href="https://github.com/ZZWENG/longtail_segmentation">Code</a>]
+compared to the supervised and partially supervised methods. [<a href="segmentation_poster.pdf">Poster</a>/<a href="https://github.com/ZZWENG/longtail_segmentation">Code</a>]
 </div>
 </div>
 
 <div style="justify-content: center;">
   <div>
       <video id="demo-video" class="center_vid" controls muted preload="auto" width="800" height="450" data-setup="{}">
-        <source id="source0" src=video.mp4 type=video/mp4>
+        <source id="source0" src=segmentation_video.mp4 type=video/mp4>
       </video>
   </div>
 
@@ -99,25 +99,25 @@ compared to the supervised and partially supervised methods. [<a href="poster.pd
   <div class="author_container">
     <div class="author">
       <a href="https://zzweng.github.io/">
-      <div class="authorphoto"><img src="./img/jen_34.png"></div>
+      <div class="authorphoto"><img src="img/jen_34.png"></div>
       <p>Zhenzhen Weng</p>
       </a>
     </div>
     <div class="author">
       <a href="https://www.linkedin.com/in/giray-ogut/">
-      <div class="authorphoto"><img src="./img/giray_34.png"></div>
+      <div class="authorphoto"><img src="img/giray_34.png"></div>
       <p>Mehmet Giray Ogut</p>
       </a>
     </div>
     <div class="author">
       <a href="https://www.linkedin.com/in/shailimonchik/">
-      <div class="authorphoto"><img src="./img/shai_34.png"></div>
+      <div class="authorphoto"><img src="img/shai_34.png"></div>
       <p>Shai Limonchik</p>
       </a>
     </div>
     <div class="author">
       <a href="http://ai.stanford.edu/~syyeung/">
-      <div class="authorphoto"><img src="./img/serena_yeung_34.jpg"></div>
+      <div class="authorphoto"><img src="img/serena_yeung_34.jpg"></div>
       <div>Serena Yeung</div>
       </a>
     </div>
@@ -132,7 +132,7 @@ compared to the supervised and partially supervised methods. [<a href="poster.pd
     <div class="col-md-6">
       <h2>Paper</h2>
       <a href="https://arxiv.org/pdf/2104.01257.pdf">
-        <img style="width: 400px" src="./img/paper.png">
+        <img style="width: 400px" src="img/paper.png">
         <p>Download the paper here.<p>
       </a>
     </div>
