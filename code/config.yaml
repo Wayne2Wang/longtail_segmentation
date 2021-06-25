@@ -1,0 +1,26 @@
+device_id: 0
+batch_size: 4
+epochs: 80
+log_every_n_steps: 500
+log_loss_every_n_steps: 10
+save_checkpoint_every_n_steps: 1000
+weight_decay: 10e-6
+lr: 1e-4
+hyperbolic: True
+mask_loss_weight: 1
+hierar_loss_weight: 1
+rpn_weights: "data/model_0027999.pth"
+desc: "test"
+
+model:
+  out_dim: 2
+  base_model: "resnet18"
+  freeze_base: True
+
+loss:
+  margin: 0.2
+  mask_loss: True
+  object_loss: True
+  include_hierarchical: True
+
+
